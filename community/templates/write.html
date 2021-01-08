@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Write</title>
+</head>
+<body>
+    <form action="" method="post">
+        {{ form.as_p}}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">저장</button>
+    </form>
+    <button type="submit" onclick="location.href= '/board_list/'">목록</button>
+
+</body>
+</html>

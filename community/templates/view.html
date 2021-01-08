@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    제목 : {{ board.title }}
+    <br>
+    내용 : {{ board.contents }}
+    <br>
+    <!--<a href="{% url 'delete' board.id %}">삭제하기</a>-->
+    <button type="submit" onclick="location.href= '/board_list/'">목록</button>
+</body>
+</html>

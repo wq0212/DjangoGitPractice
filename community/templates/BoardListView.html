@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판</title>
+</head>
+<body>
+    <h1>익명 게시판입니다!!</h1>
+    <button type="submit" onclick="location.href= '/write/'">글쓰기</button>
+
+    <ul>
+        <li>제목 | 날짜</li>
+    {% for cts in boardList %}
+        <li><a href="/view/{{ cts.id }}">{{ cts.title }}</a> | {{  cts.cdate|date:"D d M Y | H시 i분" }}</li>
+    {% endfor %}
+    </ul>
+
+
+</body>
+</html>
